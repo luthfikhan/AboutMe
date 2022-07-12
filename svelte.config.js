@@ -11,6 +11,9 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		prerender: {
+			default: true
+		},
 
 		// Override http methods in the Todo forms
 		methodOverride: {
@@ -20,6 +23,9 @@ const config = {
 			'@components': './src/components',
 			'@assets': './src/assets'
 		}
+		// paths: {
+		// 	base: '/cv'
+		// }
 	}
 };
 

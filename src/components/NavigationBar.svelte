@@ -4,6 +4,7 @@
 	import sveltelogo from '@assets/images/svelte-logo.png';
 	import tailwindlogo from '@assets/images/tailwind-logo.png';
 	import fontawesomelogo from '@assets/images/fontawesome-logo.png';
+	import { base } from '$app/paths';
 
 	const credits = [
 		{
@@ -41,7 +42,7 @@
 
 <div class="bg-primary h-screen inline-flex flex-col items-center w-24 justify-between">
 	<div class="inline-flex flex-col items-center ">
-		<a href="/">
+		<a href={base}>
 			<div class="p-5">
 				<img alt="Logo" src={logo} class="w-12" />
 			</div>
