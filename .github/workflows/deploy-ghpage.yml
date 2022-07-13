@@ -43,6 +43,7 @@ jobs:
           git status
           git remote add origin https://${{secrets.COMMIT_SECRET}}@github.com/luthfikhan/cv.git
           git checkout -b gh-pages
+          touch .nojekyll
           git add --all
           git commit -m "update"
           git push origin gh-pages -f
