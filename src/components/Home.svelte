@@ -13,13 +13,13 @@
 			route: 'https://github.com/luthfikhan'
 		},
 		{
-			icon: 'fa-brands fa-instagram',
-			route: 'https://www.instagram.com/luthfikhann/'
+			icon: 'fa-solid fa-link',
+			route: 'https://linktr.ee/luthfikhan'
 		},
 		{
 			icon: 'fa-solid fa-location-arrow',
 			route:
-				'https://www.google.co.id/maps/place/Sukoharjo,+Kec.+Sukoharjo,+Kabupaten+Sukoharjo,+Jawa+Tengah/@-7.6747287,110.7915399,13z/data=!3m1!4b1!4m5!3m4!1s0x2e7a3c13cf3788cd:0x4027a76e35301c0!8m2!3d-7.6813417!4d110.8320626'
+				'https://www.google.co.id/maps/place/Kabupaten+Sukoharjo,+Jawa+Tengah/@-7.6828249,110.6913459,11z/data=!3m1!4b1!4m5!3m4!1s0x2e7a3c6b4b49bfd3:0x3027a76e352bc50!8m2!3d-7.6483506!4d110.8552919'
 		}
 	];
 
