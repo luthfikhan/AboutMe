@@ -1,7 +1,9 @@
 <script lang="js">
-	import resume from '@assets/resume.pdf';
 	import { onMount } from 'svelte';
 	import Typed from 'typed.js';
+
+	const resume =
+		'https://drive.google.com/file/d/1PhsPjPxGVO1Nzi3SQ3HSAwCmjJdWG2YT/view?usp=sharing';
 
 	const socialRoutes = [
 		{
@@ -37,7 +39,7 @@
 	onMount(() => {
 		console.log('onMount');
 		new Typed('#skill-text', {
-			strings: ['Front-End Developer', 'Mobile Developer'],
+			strings: ['Front-End Developer', 'Mobile Developer', 'Backend Developer'],
 			typeSpeed: 20,
 			backSpeed: 10,
 			backDelay: 3000,
@@ -75,10 +77,11 @@
 			</div>
 			<div class="mt-4">
 				<span class="text-gray-400">
-					I have been working since 2019. I am proficient in Front-End Web & Mobile development
+					I have been working since 2019. I am proficient in Front-End Web, Mobile development &
+					NodeJs for Backend
 				</span>
 			</div>
-			<a href={resume} download="resume.pdf">
+			<a href={resume} target="_blank">
 				<button
 					class="py-3 px-6 mt-4 bg-secondary text-primary font-medium rounded-lg hover:text-white hover:tracking-wider transition-all"
 				>

@@ -11,6 +11,11 @@
 			icon: 'fa-solid fa-laptop-code'
 		},
 		{
+			title: 'NodeJs for Backend Development',
+			texts: ['ExpressJs', 'HapiJs'],
+			icon: 'fa-brands fa-node-js'
+		},
+		{
 			title: 'Others',
 			texts: ['Git', 'Scrum', 'Agile'],
 			icon: 'fa-brands fa-unsplash'
@@ -22,7 +27,7 @@
 			title: 'Web Developer',
 			subtitle: 'PT. Phincon ( Mar 2021 - Present )',
 			project: 'MyTelkomsel',
-			texts: ['ReactJs', 'Agile', 'SCSS', 'GIT'],
+			texts: ['ReactJs', 'Agile', 'HapiJs', 'ExpressJs', 'Docker'],
 			icon: 'fa-solid fa-laptop-code',
 			link: 'https://my.telkomsel.com'
 		},
