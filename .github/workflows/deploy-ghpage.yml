@@ -27,6 +27,8 @@ jobs:
 
       - name: Update gh-pages branch
         run: |
+          rm -R .git
+          git init
           git config --global user.email luthfikhoirulanwar55@gmail.com
           git config --global user.name luthfikhan
           git status
