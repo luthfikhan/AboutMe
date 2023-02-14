@@ -2,6 +2,7 @@
     "use strict";
 
     $(document).on('ready', function() {
+        document.getElementById("yearcount").innerHTML = (new Date()).getFullYear() - 2020
 
 		// Preloader
 		$(window).on('load', function () {
