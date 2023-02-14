@@ -1,10 +1,3 @@
-/* ===================================================================
-    
-		Theme Name:  Wokoya - Personal Portfolio HTML Template
-		Author: Themetum
-		Version         : 1.0
-    
-* ================================================================= */
 (function($) {
     "use strict";
 
