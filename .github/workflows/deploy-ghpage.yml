@@ -24,27 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 6.0.2
 
-      # Runs a set of commands using the runners shell
-      - name: Build svelte
-        run: |
-          node -v
-          pnpm install
-          pnpm run build
-          
       - name: Update gh-pages branch
         run: |
-          cd build
-          git init
-          git config --global user.email luthfikhoirulanwar55@gmail.com
-          git config --global user.name luthfikhan
-          git status
-          git remote add origin https://${{secrets.COMMIT_SECRET}}@github.com/luthfikhan/cv.git
           git checkout -b gh-pages
-          touch .nojekyll
           git add --all
           git commit -m "update"
           git push origin gh-pages -f
