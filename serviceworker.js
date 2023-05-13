@@ -1,12 +1,11 @@
-// This code executes in its own worker or thread
-self.addEventListener("install", event => {
-  console.log("Service worker installed");
-});
-self.addEventListener("activate", event => {
-  console.log("Service worker activated");
-});
-self.addEventListener('fetch', (event) => {
-  console.log('Service Worker: Fetching');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.3.0/workbox-sw.js');
 
-  event.respondWith(fetch(event.request));
-});
+if (workbox) {
+  console.log(`Workbox berhasil dimuat`);
+  
+  workbox.precaching.precacheAndRoute([
+    {url: '/', revision: '1'},
+  ]);
+} else {
+  console.log(`Workbox gagal dimuat`);
+}
