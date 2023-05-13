@@ -463,7 +463,12 @@
 		<div class="mouse-cursor cursor-inner"></div>
 		<!-- /CURSOR -->
 	</div>	
-</div>	<!-- Mouse Cursor End --> 	
+</div>	<!-- Mouse Cursor End -->
+	<script>
+		if ('serviceWorker' in navigator) {
+   		navigator.serviceWorker.register("/serviceworker.js");
+		}
+	</script>
   
 	<!-- jQuery Frameworks 
     ============================================= -->
